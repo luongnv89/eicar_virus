@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -67,11 +65,14 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Container(
-          margin: const EdgeInsets.all(8),
-          // Center is a layout widget. It takes a single child and positions it
-          // in the middle of the parent.
-          child: const Text(
-              'It does no harm to your device - more detail can be found here: https://www.eicar.org/?page_id=3950')), // This trailing comma makes auto-formatting nicer for build methods.
+        margin: const EdgeInsets.all(8),
+        // Center is a layout widget. It takes a single child and positions it
+        // in the middle of the parent.
+        child: const Center(
+          child: Text(
+              'This is just a testing malware and it does no harm to your device - more detail can be found here: https://www.eicar.org/?page_id=3950'),
+        ),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
