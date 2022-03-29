@@ -68,9 +68,46 @@ class _MyHomePageState extends State<MyHomePage> {
         margin: const EdgeInsets.all(8),
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: const Center(
-          child: Text(
-              'This is just a testing malware and it does no harm to your device - more detail can be found here: https://www.eicar.org/?page_id=3950'),
+        child: Center(
+          child: Column(
+            children: const [
+              SizedBox(
+                height: 50,
+              ),
+              Text(
+                'Now open your anti-virus application, it should be able to detect this new EICAR virus',
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                'This is just a testing malware and it does no harm to your device',
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: Colors.green),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                'More detail can be found here: https://www.eicar.org/?page_id=3950',
+                style:
+                    TextStyle(fontStyle: FontStyle.italic, color: Colors.grey),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text('Developed by Montimage'),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                'Version 1.0',
+                style: TextStyle(fontStyle: FontStyle.italic),
+              ),
+            ],
+          ),
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
