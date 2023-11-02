@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'EICAR Virus Testing',
+      title: 'EICAR Virus',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'EICAR Virus Testing'),
+      home: const MyHomePage(title: 'EICAR Virus - For testing'),
     );
   }
 }
@@ -103,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 10,
               ),
               Text(
-                'Version 1.0',
+                'Version 1.0.1',
                 style: TextStyle(fontStyle: FontStyle.italic),
               ),
             ],
